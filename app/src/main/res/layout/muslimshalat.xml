@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edtxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/loc"
+                android:text="@string/location"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textloc"
+                android:text="@string/myloc"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/date"
+                android:text="@string/date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textdate"
+                android:text="@string/date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prayer_time"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/subuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subuh"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textsbh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginLeft="155dp"
+                android:layout_toEndOf="@id/subuh"
+                android:layout_toRightOf="@id/subuh"
+                android:text="@string/subuh"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dzuhur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subuh"
+                android:text="@string/dzuhur"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textdzh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subuh"
+                android:layout_marginStart="148dp"
+                android:layout_marginLeft="148dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/dzuhur"
+                android:layout_toRightOf="@id/dzuhur"
+                android:text="@string/dzuhur"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ashar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dzuhur"
+                android:text="@string/ashar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dzuhur"
+                android:layout_marginStart="159dp"
+                android:layout_marginLeft="159dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@id/ashar"
+                android:layout_toRightOf="@id/ashar"
+                android:text="@string/ashar"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/magrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ashar"
+                android:text="@string/maghrib"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textmgh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ashar"
+                android:layout_marginStart="137dp"
+                android:layout_marginLeft="137dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/magrib"
+                android:layout_toRightOf="@id/magrib"
+                android:text="@string/maghrib"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/isya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/magrib"
+                android:text="@string/isya"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textisy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/magrib"
+                android:layout_marginStart="177dp"
+                android:layout_marginLeft="177dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/isya"
+                android:layout_toRightOf="@id/isya"
+                android:text="@string/isya"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
