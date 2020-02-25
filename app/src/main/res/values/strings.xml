@@ -10,8 +10,8 @@
     <string name="maghrib">Maghrib</string>
     <string name="isya">Isya</string>
     <string name="prayer_time">Prayer Time</string>
-    <string name="location">Location</string>
+    <string name="location">Location: </string>
     <string name="myloc">myLoc</string>
-    <string name="date">Date</string>
+    <string name="date">Date:</string>
     <string name="search">Search</string>
 </resources>
