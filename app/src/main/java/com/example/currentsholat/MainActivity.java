@@ -2,12 +2,16 @@ package com.example.currentsholat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
@@ -31,14 +35,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button1 = findViewById(R.id.toms);
-        button1.setOnClickListener(new View.OnClickListener() {
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomnav_main);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent ontent = new Intent(MainActivity.this, MuslimShalat.class);
-                startActivity(ontent);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.home:
+                        break;
+                    case R.id.sholat:
+                        startActivity(new Intent(MainActivity.this, MuslimShalat.class));
+                        break;
+                    case R.id.kiblat:
+                        startActivity(new Intent(MainActivity.this, Compass.class));
+                        break;
+                }
+                return false;
             }
         });
-
     }
+
 }

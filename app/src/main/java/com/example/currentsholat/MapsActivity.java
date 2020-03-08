@@ -53,8 +53,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(MapsActivity.this)
-                        .setTitle("Yakin")
-                        .setMessage("Serius Mi Apah?")
+                        .setTitle("Perhatian")
+                        .setMessage("Yakin Ga?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

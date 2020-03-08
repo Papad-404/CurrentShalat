@@ -14,4 +14,10 @@
     <string name="myloc">myLoc</string>
     <string name="date">Date:</string>
     <string name="search">Search</string>
+
+    <string name="beranda">Beranda</string>
+    <string name="sholat">Sholat</string>
+    <string name="kiblat">Kiblat</string>
+    <string name="kesehatan">Kesehatan</string>
+    <string name="author">Author</string>
 </resources>

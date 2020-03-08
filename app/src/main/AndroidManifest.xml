@@ -42,8 +42,10 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".MuslimShalat"/>
         <activity android:name=".MapsActivity"/>
+        <activity android:name=".Compass"/>
     </application>
 
 </manifest>

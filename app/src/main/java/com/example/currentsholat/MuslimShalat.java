@@ -3,15 +3,18 @@ package com.example.currentsholat;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -21,6 +24,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -57,13 +61,31 @@ public class MuslimShalat extends AppCompatActivity {
         mTvDate = findViewById(R.id.textdate);
         textView = findViewById(R.id.btncity2);
 
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomnav_main);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.home:
+                        startActivity(new Intent(MuslimShalat.this, MainActivity.class));
+                        break;
+                    case R.id.sholat:
+                        break;
+                    case R.id.kiblat:
+                        startActivity(new Intent(MuslimShalat.this, Compass.class));
+                        break;
+                }
+                return false;
+            }
+        });
+
         searchLoc();
 
     }
 
     private void searchLoc() {
         pDialog = new ProgressDialog(this);
-        pDialog.setMessage("Makan Bang");
+        pDialog.setMessage("Sabar Ini Cobaan");
         pDialog.show();
 
         Geocoder geocoder;
